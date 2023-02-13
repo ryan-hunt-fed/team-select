@@ -1,13 +1,27 @@
 import React from 'react'
 
+
+import Nav from './Nav'
+import TeamSearch from './TeamSearch'
+import TeamSelect from './TeamSelect'
+import TypeSelect from './TypeSelect'
+import Footer from './Footer'
+
+
 function App() {
   return (
-    <>
-      <header className="header">
-        <h1>My Collection</h1>
-      </header>
-      <section className="main">{/* add your code here */}</section>
-    </>
+    <div>
+      <div>
+        <Nav />
+      </div>
+      <div>
+        <TeamSearch />
+        <TypeSelect />
+        <TeamSelect />
+      </div>
+      <Footer />
+
+    </div>
   )
 }
 
