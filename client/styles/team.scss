@@ -1,0 +1,84 @@
+
+.team-section{
+    background-color: #F6F8FF;
+    clip-path: polygon(0 0,100% 0,100% 100%,calc(50% + 2.07px + 50.00px) 100%,50% calc(100% - 50px - 2.07px),calc(50% - 2.07px - 50.00px) 100%,0 100%);
+    padding-bottom: 50px;
+    }
+
+.team-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:5px;
+    padding: 15px;
+  }
+
+  .pokemon-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    // background-color: beige;
+    // width:500px;
+  }
+
+  .pokemon-background{
+    background-color: #A881AE;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin: 0px 250px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    // border: 2px solid rgb(151, 151, 151);
+    box-shadow: 0 17px 9px rgba(0, 0, 0, 0.5)  ; 
+    // padding: 8px;
+    // width:80%
+  }
+
+.all-pokemon{
+    // display: flex;
+    // flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // justify-content: center;
+    align-items: center;
+    margin: 25px 20px ;
+    // width: 80%;
+    background-color: #D4D9FF;
+    border-radius: 5px;
+    box-shadow: 0 17px 9px rgba(0, 0, 0, 0.5)  ; 
+  }
+  
+  .single-pokemon{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding:8px;
+    margin: 5px 10px;
+    // width: 80px;
+    background-color: #D4D9FF;
+    border-radius: 5px;
+
+  
+    & img {
+  
+      width:150px;
+      height:150px;
+  
+    }
+  }
+  
+  .pokemon-types{
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+  }
+  
+  

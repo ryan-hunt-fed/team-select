@@ -4,7 +4,6 @@ import { pokemonTypeApi } from '../apis/pokemonApi'
 
 function TypeSelect() {
 
-    // const [pokemonType, setPokemonType] = useState([])
     const [pokemon, setPokemon] = useState([])
 
 
@@ -174,41 +173,48 @@ function TypeSelect() {
 
     return (
         <>
-            <div>
-                <h2 id='poke-types'>Pokemon Types</h2>
-                <p>Select a type to see what it is strong against and weak to.</p>
-            </div>
-            <div>
-                <button onClick={type1}>Normal</button>
-                <button onClick={type2}>Fighting</button>
-                <button onClick={type3}>Flying</button>
-                <button onClick={type4}>Poison</button>
-                <button onClick={type5}>Ground</button>
-                <button onClick={type6}>Rock</button>
-                <button onClick={type7}>Bug</button>
-                <button onClick={type8}>Ghost</button>
-                <button onClick={type9}>Steel</button>
-                <button onClick={type10}>Fire</button>
-                <button onClick={type11}>Water</button>
-                <button onClick={type12}>Grass</button>
-                <button onClick={type13}>Electric</button>
-                <button onClick={type14}>Psychic</button>
-                <button onClick={type15}>Ice</button>
-                <button onClick={type16}>Dragon</button>
-                <button onClick={type17}>Dark</button>
-                <button onClick={type18}>Fairy</button>
+            <section className='type-section' id='poke-types'>
 
-            </div>
-            <div>
+                <div className='type-header'>
+                    <h2 >Pokemon Types</h2>
+                    <p>Select a type to see what it is strong against and weak to.</p>
+                </div>
 
-                <h4>{pokemon?.name?.toUpperCase()}</h4>
-                <p>Weak to: {pokemon?.damage_relations?.double_damage_from?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[1]?.name?.toUpperCase()}  </p>
-                <p>Strong against:{pokemon?.damage_relations?.double_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[1]?.name?.toUpperCase()}</p>
-                <p>Resistant From: {pokemon?.damage_relations?.half_damage_from?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[2]?.name?.toUpperCase()}</p>
-                <p>Resistant to: {pokemon?.damage_relations?.half_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[2]?.name?.toUpperCase()}</p>
-                <p>No Damage to: {pokemon?.damage_relations?.no_damage_to?.[0]?.name?.toUpperCase()}</p>
+                <div className='type-container'>
 
-            </div>
+                    <div className='type-buttons'>
+                        <button id='normal-button' onClick={type1}>Normal</button>
+                        <button id='fighting-button' onClick={type2}>Fighting</button>
+                        <button id='flying-button' onClick={type3}>Flying</button>
+                        <button id='poison-button' onClick={type4}>Poison</button>
+                        <button id='ground-button' onClick={type5}>Ground</button>
+                        <button id='rock-button' onClick={type6}>Rock</button>
+                        <button id='bug-button' onClick={type7}>Bug</button>
+                        <button id='ghost-button' onClick={type8}>Ghost</button>
+                        <button id='steel-button' onClick={type9}>Steel</button>
+                        <button id='fire-button' onClick={type10}>Fire</button>
+                        <button id='water-button' onClick={type11}>Water</button>
+                        <button id='grass-button' onClick={type12}>Grass</button>
+                        <button id='electric-button' onClick={type13}>Electric</button>
+                        <button id='psychic-button' onClick={type14}>Psychic</button>
+                        <button id='ice-button' onClick={type15}>Ice</button>
+                        <button id='dragon-button' onClick={type16}>Dragon</button>
+                        <button id='dark-button' onClick={type17}>Dark</button>
+                        <button id='fairy-button' onClick={type18}>Fairy</button>
+                    </div>
+
+                    <div className='type-results'>
+                        <h4>{pokemon?.name?.toUpperCase()}</h4>
+                        <p>Weak to: {pokemon?.damage_relations?.double_damage_from?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[1]?.name?.toUpperCase()}  </p>
+                        <p>Strong against: {pokemon?.damage_relations?.double_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[1]?.name?.toUpperCase()}</p>
+                        {/* <p>Resistant From: {pokemon?.damage_relations?.half_damage_from?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[2]?.name?.toUpperCase()}</p>
+                        <p>Resistant to: {pokemon?.damage_relations?.half_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[2]?.name?.toUpperCase()}</p> */}
+                        <p>No Damage to: {pokemon?.damage_relations?.no_damage_to?.[0]?.name?.toUpperCase()}</p>
+                    </div>
+
+                </div>
+
+            </section>
         </>
     )
 }

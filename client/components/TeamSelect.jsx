@@ -1010,18 +1010,7 @@ function TeamSelect() {
         'lycanroc-midnight',
         'wishiwashi-school',
         'minior-orange-meteor',
-        'minior-yellow-meteor',
-        'minior-green-meteor',
-        'minior-blue-meteor',
-        'minior-indigo-meteor',
-        'minior-violet-meteor',
         'minior-red',
-        'minior-orange',
-        'minior-yellow',
-        'minior-green',
-        'minior-blue',
-        'minior-indigo',
-        'minior-violet',
         'magearna-original',
         'rockruff-own-tempo',
         'lycanroc-dusk',
@@ -1089,10 +1078,10 @@ function TeamSelect() {
 
     return (
         <>
-            <section className='team-section'>
-                <div className='generate-header'>
-                    <h2 id='poke-team'>Generate Random Team</h2>
-                    <p>Want to make a random team for Pokemon Showdown, a randomized playthrough or for a potential drawing prompt, click and get a full team of different pokemon, if you don't like it click again and test your luck!</p>
+            <section className='team-section' id='poke-team'>
+                <div className='team-header'>
+                    <h2 >Generate Random Team</h2>
+                    <p>Want to make a random team for Pokemon Showdown, a randomized playthrough or for a potential drawing prompt, click and get a full team of different pokemon, if you don&#39;t like it click again and test your luck!</p>
                     <button onClick={generatePokemon}>Generate</button>
                 </div>
 

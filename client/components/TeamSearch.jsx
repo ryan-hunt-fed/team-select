@@ -17,6 +17,7 @@ function TeamSearch() {
         // console.log('gathered data', search)
         setInputData('')
         console.log(specialData)
+
     }
 
     const typeHandle = (evt) => {
@@ -28,9 +29,9 @@ function TeamSearch() {
 
     return (
         <>
-            <section className='search-section'>
+            <section className='search-section' id='poke-search'>
                 <div className='search-container'>
-                    <h2 id='poke-search'>Pokemon Search</h2>
+                    <h2 >Pokemon Search</h2>
                     <p>Search for any Pokemon from Gen 1 to 8. Use all lower case and for specfic forms add - after, e.g. -mega.</p>
                     <form onSubmit={searchHandle}>
                         <label htmlFor='search'></label>
@@ -47,7 +48,7 @@ function TeamSearch() {
                     <div className='results-data'>
                         <h3>{recievedSearch?.name?.toUpperCase()}</h3>
                         <p>Type: {recievedSearch?.types?.[0]?.type?.name?.toUpperCase()} {recievedSearch?.types?.[1]?.type?.name?.toUpperCase()}</p>
-                        <p>Abilities: {recievedSearch?.abilities?.[0]?.ability?.name.toUpperCase()}, {recievedSearch?.abilities?.[1]?.ability?.name.toUpperCase()}</p>
+                        <p>Abilities: {recievedSearch?.abilities?.[0]?.ability?.name.toUpperCase()}   {recievedSearch?.abilities?.[1]?.ability?.name.toUpperCase()}</p>
                         <p>Gen: {specialData?.generation?.name.toUpperCase()}</p>
                         <p>Evolves from: {specialData?.evolves_from_species?.name.toUpperCase()}</p>
                         {/* <p>Dex Entry: "{specialData?.flavor_text_entries?.[2]?.flavor_text}"</p> */}
