@@ -1,9 +1,10 @@
 
 .nav-container{
     background-color: #A42323;
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),calc(50% + 50.00px) calc(100% - 50px),50% 100%,calc(50% - 50.00px) calc(100% - 50px),0 calc(100% - 50px));
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),calc(50% + 283.56px) calc(100% - 50px),50% 100%,calc(50% - 283.56px) calc(100% - 50px),0 calc(100% - 50px));
+
     padding-bottom: 50px;
-    
+    padding-top: 20px;
 
   }
 
@@ -27,6 +28,7 @@
     margin-left: 40px;
     // margin: 0px 300px;
     // text-decoration: none;
+    padding-bottom: 10px;
     
 
     & a {

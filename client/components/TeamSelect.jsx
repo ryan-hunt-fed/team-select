@@ -1009,7 +1009,6 @@ function TeamSelect() {
         'oricorio-sensu',
         'lycanroc-midnight',
         'wishiwashi-school',
-        'minior-orange-meteor',
         'minior-red',
         'magearna-original',
         'rockruff-own-tempo',

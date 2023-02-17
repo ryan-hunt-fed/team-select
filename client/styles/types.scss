@@ -7,7 +7,7 @@
    
     color: white;
     
-    
+
           
     
 }
@@ -21,7 +21,7 @@
 }
 
 .type-container{
-    background-color: #E9EFFF;
+    background-color: #D4D9FF;
     margin: 0px 250px;
     border-radius: 10px;
     border: 2px solid rgb(151, 151, 151);
@@ -47,14 +47,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    // gap: 5px;
     margin: 0px 250px;
     color: #000;
+    padding-top: 5px;
 }
 
 #normal-button{
     background-color: #ABA77A;
     border-radius: 5px;
+    color: white;
 }
 
 #fire-button{
@@ -72,16 +74,19 @@
 #grass-button{
     background-color: #7AC74C;
     border-radius: 5px;
+    color: white;
 }
 
 #electric-button{
     background-color: #F7D02C;
     border-radius: 5px;
+    color: white;
 }
 
 #ice-button{
     background-color: #96D9D6;
     border-radius: 5px;
+    color: white;
 }
 
 #fighting-button{
@@ -99,11 +104,13 @@
 #ground-button{
     background-color: #E2BF65;
     border-radius: 5px;
+    color: white;
 }
 
 #flying-button{
     background-color: #A98FF3;
     border-radius: 5px;
+    color: white;
 }
 
 #psychic-button{
@@ -145,9 +152,11 @@
 #steel-button{
     background-color: #B7B7CE;
     border-radius: 5px;
+    color: white;
 }
 
 #fairy-button{
     background-color: #D685AD;
     border-radius: 5px;
+    color: white;
 }

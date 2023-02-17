@@ -33,7 +33,7 @@ function TeamSearch() {
                 <div className='search-container'>
                     <h2 >Pokemon Search</h2>
                     <p>Search for any Pokemon from Gen 1 to 8. Use all lower case and for specfic forms add - after, e.g. -mega.</p>
-                    <form onSubmit={searchHandle}>
+                    <form onSubmit={searchHandle} className='form'>
                         <label htmlFor='search'></label>
                         <input type='text' id='search' value={inputData} onChange={typeHandle} ></input>
                         <button>Search</button>

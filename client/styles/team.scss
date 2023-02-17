@@ -1,7 +1,8 @@
 
 .team-section{
-    background-color: #F6F8FF;
-    clip-path: polygon(0 0,100% 0,100% 100%,calc(50% + 2.07px + 50.00px) 100%,50% calc(100% - 50px - 2.07px),calc(50% - 2.07px - 50.00px) 100%,0 100%);
+    background-color: #e4e4dc;
+    clip-path: polygon(0 0,100% 0,100% 100%,calc(50% + 0.44px + 283.56px) 100%,50% calc(100% - 50px - 0.08px),calc(50% - 0.44px - 283.56px) 100%,0 100%);
+
     padding-bottom: 50px;
     }
 
@@ -12,6 +13,17 @@
     flex-direction: column;
     gap:5px;
     padding: 15px;
+    margin: 0px 250px;
+
+    & p {
+        text-align: center;
+    }
+
+    & button {
+        background-color: #27D0DE;
+        border-radius: 5px;
+        // color:white;
+    }
   }
 
   .pokemon-container{
@@ -47,7 +59,7 @@
     justify-content: space-between;
     // justify-content: center;
     align-items: center;
-    margin: 25px 20px ;
+    margin: 35px 20px ;
     // width: 80%;
     background-color: #D4D9FF;
     border-radius: 5px;
