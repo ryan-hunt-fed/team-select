@@ -47,6 +47,7 @@ function TeamSearch() {
                     </div>
                     <div className='results-data'>
                         <h3>{recievedSearch?.name?.toUpperCase()}</h3>
+                        <p>Pokedex #: {specialData?.id}</p>
                         <p>Type: {recievedSearch?.types?.[0]?.type?.name?.toUpperCase()} {recievedSearch?.types?.[1]?.type?.name?.toUpperCase()}</p>
                         <p>Abilities: {recievedSearch?.abilities?.[0]?.ability?.name.toUpperCase()}   {recievedSearch?.abilities?.[1]?.ability?.name.toUpperCase()}</p>
                         <p>Gen: {specialData?.generation?.name.toUpperCase()}</p>
