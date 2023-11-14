@@ -4,13 +4,19 @@
     background-color: #A42323;
     padding: 15px;
     padding-top: 55px;
+    border: #000;
+      border-style: solid;
 
-    clip-path: polygon(0 50px,calc(50% - 283.56px) 50px,50% 0,calc(50% + 283.56px) 50px,100% 50px,100% 100%,0 100%);
+    // clip-path: polygon(0 50px,calc(50% - 283.56px) 50px,50% 0,calc(50% + 283.56px) 50px,100% 50px,100% 100%,0 100%);
 
-    margin-top: -45px;
+    // margin-top: -45px;
 
     & a {
         text-decoration: none;
         color: white;
     }
+
+    & a:hover{
+        color:#27D0DE;
+      }
   }

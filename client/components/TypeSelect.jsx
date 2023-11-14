@@ -205,11 +205,11 @@ function TypeSelect() {
 
                     <div className='type-results'>
                         <h4>{pokemon?.name?.toUpperCase()}</h4>
-                        <p>Weak to: {pokemon?.damage_relations?.double_damage_from?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[1]?.name?.toUpperCase()}  </p>
-                        <p>Strong against: {pokemon?.damage_relations?.double_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[1]?.name?.toUpperCase()}</p>
+                        <p>Weak to: {pokemon?.damage_relations?.double_damage_from?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[2]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[3]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[4]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[5]?.name?.toUpperCase()}</p>
+                        <p>Strong against: {pokemon?.damage_relations?.double_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[2]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[3]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[4]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[5]?.name?.toUpperCase()}</p>
                         {/* <p>Resistant From: {pokemon?.damage_relations?.half_damage_from?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[2]?.name?.toUpperCase()}</p>
                         <p>Resistant to: {pokemon?.damage_relations?.half_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[2]?.name?.toUpperCase()}</p> */}
-                        <p>No Damage to: {pokemon?.damage_relations?.no_damage_to?.[0]?.name?.toUpperCase()}</p>
+                        <p>No Damage to: {pokemon?.damage_relations?.no_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.no_damage_to?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.no_damage_to?.[2]?.name?.toUpperCase()} {pokemon?.damage_relations?.no_damage_to?.[3]?.name?.toUpperCase()}</p>
                     </div>
 
                 </div>
