@@ -68,10 +68,12 @@
         font-size: 24px;
         background-color: #6F7597;
         padding: 10px;
-        border-radius: 5%;
+        border-radius: 10%;
         margin-bottom: 15px;
         transition-duration: 100ms;
       transition-property: color;
+      border: 2px solid rgb(66, 66, 66);
+     
     }
 
     & a:hover{
