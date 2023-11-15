@@ -42,8 +42,12 @@ function TeamSearch() {
 
                 <div className='results-container'>
                     <div className='results-img'>
+                        <p>Normal Sprite</p>
                         <img src={recievedSearch?.sprites?.front_default} alt={recievedSearch?.name} />
+                        <img src={recievedSearch?.sprites?.back_default} alt={recievedSearch?.name} />
+                        <p>Shiny Sprite</p>
                         <img src={recievedSearch?.sprites?.front_shiny} alt={recievedSearch?.name} />
+                        <img src={recievedSearch?.sprites?.back_shiny} alt={recievedSearch?.name} />
                     </div>
                     <div className='results-data'>
                         <h3>{recievedSearch?.name?.toUpperCase()}</h3>
