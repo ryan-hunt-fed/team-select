@@ -9,9 +9,9 @@ function Nav() {
                 </div> */}
                 <br />
                 <div className='nav-links' >
-                    <p><a href='#poke-search'>Search</a></p>
-                    <p><a href='#poke-types'>Types</a></p>
-                    <p><a href='#poke-team'>Random Team</a></p>
+                    <p><a href='#poke-search'>SEARCH</a></p>
+                    <p><a href='#poke-types'>TYPES</a></p>
+                    <p><a href='#poke-team'>RANDOM TEAM</a></p>
                 </div>
 
             </div>

@@ -176,31 +176,31 @@ function TypeSelect() {
             <section className='type-section' id='poke-types'>
 
                 <div className='type-header'>
-                    <h2 >Pokemon Types</h2>
+                    <h2 >POKEMON TYPES</h2>
                     <p>Select a type to see what it is strong against and weak to.</p>
                 </div>
 
                 <div className='type-container'>
 
                     <div className='type-buttons'>
-                        <button id='normal-button' onClick={type1}>Normal</button>
-                        <button id='fighting-button' onClick={type2}>Fighting</button>
-                        <button id='flying-button' onClick={type3}>Flying</button>
-                        <button id='poison-button' onClick={type4}>Poison</button>
-                        <button id='ground-button' onClick={type5}>Ground</button>
-                        <button id='rock-button' onClick={type6}>Rock</button>
-                        <button id='bug-button' onClick={type7}>Bug</button>
-                        <button id='ghost-button' onClick={type8}>Ghost</button>
-                        <button id='steel-button' onClick={type9}>Steel</button>
-                        <button id='fire-button' onClick={type10}>Fire</button>
-                        <button id='water-button' onClick={type11}>Water</button>
-                        <button id='grass-button' onClick={type12}>Grass</button>
-                        <button id='electric-button' onClick={type13}>Electric</button>
-                        <button id='psychic-button' onClick={type14}>Psychic</button>
-                        <button id='ice-button' onClick={type15}>Ice</button>
-                        <button id='dragon-button' onClick={type16}>Dragon</button>
-                        <button id='dark-button' onClick={type17}>Dark</button>
-                        <button id='fairy-button' onClick={type18}>Fairy</button>
+                        <button id='normal-button' onClick={type1}>NORMAL</button>
+                        <button id='fighting-button' onClick={type2}>FIGHTING</button>
+                        <button id='flying-button' onClick={type3}>FLYING</button>
+                        <button id='poison-button' onClick={type4}>POISON</button>
+                        <button id='ground-button' onClick={type5}>GROUND</button>
+                        <button id='rock-button' onClick={type6}>ROCK</button>
+                        <button id='bug-button' onClick={type7}>BUG</button>
+                        <button id='ghost-button' onClick={type8}>GHOST</button>
+                        <button id='steel-button' onClick={type9}>STEEL</button>
+                        <button id='fire-button' onClick={type10}>FIRE</button>
+                        <button id='water-button' onClick={type11}>WATER</button>
+                        <button id='grass-button' onClick={type12}>GRASS</button>
+                        <button id='electric-button' onClick={type13}>ELECTRIC</button>
+                        <button id='psychic-button' onClick={type14}>PSYCHIC</button>
+                        <button id='ice-button' onClick={type15}>ICE</button>
+                        <button id='dragon-button' onClick={type16}>DRAGON</button>
+                        <button id='dark-button' onClick={type17}>DARK</button>
+                        <button id='fairy-button' onClick={type18}>FAIRY</button>
                     </div>
 
                     <div className='type-results'>

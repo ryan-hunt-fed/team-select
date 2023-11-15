@@ -1078,9 +1078,9 @@ function TeamSelect() {
         <>
             <section className='team-section' id='poke-team'>
                 <div className='team-header'>
-                    <h2 >Generate Random Team</h2>
+                    <h2 >GENERATE RANDOM TEAM</h2>
                     <p>Want to make a random team for Pokemon Showdown, a randomized playthrough or for a potential drawing prompt, click and get a full team of different pokemon, if you don&#39;t like it click again and test your luck!</p>
-                    <button onClick={generatePokemon}>Generate</button>
+                    <button onClick={generatePokemon}>GENERATE</button>
                 </div>
 
                 <div className='pokemon-container'>
@@ -1095,11 +1095,11 @@ function TeamSelect() {
                                             <h3>{pokemon?.name?.toUpperCase()}</h3>
                                             <img src={pokemon?.sprites?.front_default} alt={pokemon?.name} />
                                             <div className='pokemon-types'>
-                                                <p>Type: {pokemon?.types?.[0]?.type?.name.toUpperCase()}</p>
+                                                <p>TYPE: {pokemon?.types?.[0]?.type?.name.toUpperCase()}</p>
                                                 <p>{pokemon?.types?.[1]?.type?.name?.toUpperCase()}</p>
 
                                             </div>
-                                            <p>Abillity: {pokemon?.abilities?.[0]?.ability?.name.toUpperCase()} </p>
+                                            <p>ABILITY: {pokemon?.abilities?.[0]?.ability?.name.toUpperCase()} </p>
                                         </div>
                                     </div>
 
