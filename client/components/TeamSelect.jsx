@@ -1038,7 +1038,6 @@ function TeamSelect() {
         'toxtricity-low-key',
         'eiscue-noice',
         'indeedee-female',
-        'morpeko-hangry',
         'zacian-crowned',
         'zamazenta-crowned',
         'eternatus-eternamax',
@@ -1096,9 +1095,11 @@ function TeamSelect() {
                                             <h3>{pokemon?.name?.toUpperCase()}</h3>
                                             <img src={pokemon?.sprites?.front_default} alt={pokemon?.name} />
                                             <div className='pokemon-types'>
-                                                <p>{pokemon?.types?.[0]?.type?.name.toUpperCase()}</p>
+                                                <p>Type: {pokemon?.types?.[0]?.type?.name.toUpperCase()}</p>
                                                 <p>{pokemon?.types?.[1]?.type?.name?.toUpperCase()}</p>
+
                                             </div>
+                                            <p>Abillity: {pokemon?.abilities?.[0]?.ability?.name.toUpperCase()} </p>
                                         </div>
                                     </div>
 
