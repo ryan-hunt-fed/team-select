@@ -1078,7 +1078,7 @@ function TeamSelect() {
         <>
             <section className='team-section' id='poke-team'>
                 <div className='team-header'>
-                    <h2 >GENERATE RANDOM TEAM</h2>
+                    <h2 >POKEMON RANDOM TEAM</h2>
                     <p>Want to make a random team for Pokemon Showdown, a randomized playthrough or for a potential drawing prompt, click and get a full team of different pokemon, if you don&#39;t like it click again and see what you get!</p>
                     <button onClick={generatePokemon}>GENERATE</button>
                 </div>
