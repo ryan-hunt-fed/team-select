@@ -225,11 +225,11 @@ function TypeSelect() {
 
                     <div className='type-results'>
                         <h4>{pokemon?.name?.toUpperCase()}</h4>
-                        <p>Weak to: {pokemon?.damage_relations?.double_damage_from?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[2]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[3]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[4]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[5]?.name?.toUpperCase()}</p>
-                        <p>Strong against: {pokemon?.damage_relations?.double_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[2]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[3]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[4]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[5]?.name?.toUpperCase()}</p>
+                        <p>WEAK: {pokemon?.damage_relations?.double_damage_from?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[2]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[3]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[4]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_from?.[5]?.name?.toUpperCase()}</p>
+                        <p>STRONG: {pokemon?.damage_relations?.double_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[2]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[3]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[4]?.name?.toUpperCase()} {pokemon?.damage_relations?.double_damage_to?.[5]?.name?.toUpperCase()}</p>
                         {/* <p>Resistant From: {pokemon?.damage_relations?.half_damage_from?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[2]?.name?.toUpperCase()}</p>
                         <p>Resistant to: {pokemon?.damage_relations?.half_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.half_damage_from?.[2]?.name?.toUpperCase()}</p> */}
-                        <p>No Damage to: {pokemon?.damage_relations?.no_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.no_damage_to?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.no_damage_to?.[2]?.name?.toUpperCase()} {pokemon?.damage_relations?.no_damage_to?.[3]?.name?.toUpperCase()}</p>
+                        <p>NO DAMAGE: {pokemon?.damage_relations?.no_damage_to?.[0]?.name?.toUpperCase()} {pokemon?.damage_relations?.no_damage_to?.[1]?.name?.toUpperCase()} {pokemon?.damage_relations?.no_damage_to?.[2]?.name?.toUpperCase()} {pokemon?.damage_relations?.no_damage_to?.[3]?.name?.toUpperCase()}</p>
                     </div>
 
                 </div>
@@ -255,7 +255,7 @@ function TypeSelect() {
                 </div>
                 <div className='ability-container'>
                     <form onSubmit={searchHandle} className='form'>
-                        <label htmlFor='ability'>Ability:</label>
+                        {/* <label htmlFor='ability'>ABILITY:</label> */}
                         {/* <input type='submit' value={inputData} onChange={typeHandle} ></input> */}
                         <select name='abilities' id='ability' onChange={typeHandle}>
                             <option value='adaptability'>Adaptability</option>
@@ -562,9 +562,19 @@ function TypeSelect() {
                     </form>
                     <div className='ability-results'>
                         <h4>{recievedSearch?.name?.toUpperCase()}</h4>
-                        {/* <p>{recievedSearch?.effect_entries?.[0]?.effect}</p> */}
-                        <p>{recievedSearch?.effect_entries?.[1]?.effect}</p>
-                        <p>{recievedSearch?.effect_entries?.[1]?.short_effect}</p>
+
+
+                        {recievedSearch?.effect_entries?.[1]?.effect == null ? (
+                            <p>{recievedSearch?.effect_entries?.[0]?.effect}</p>
+                        ) : (
+                            <p>{recievedSearch?.effect_entries?.[1]?.effect}</p>
+                        )}
+
+                        {recievedSearch?.effect_entries?.[1]?.short_effect == null ? (
+                            <p>{recievedSearch?.effect_entries?.[0]?.short_effect}</p>
+                        ) : (
+                            <p>{recievedSearch?.effect_entries?.[1]?.short_effect}</p>
+                        )}
                     </div>
                 </div>
 
