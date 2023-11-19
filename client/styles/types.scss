@@ -269,7 +269,9 @@
     border-radius: 10px;
     border: 2px solid rgb(66, 66, 66);
     box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.5)  ; 
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     // width: 1000px;
     justify-content: center;
     align-content: center;
@@ -279,6 +281,7 @@
     flex-direction: column;
 
     & form{
+        display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;

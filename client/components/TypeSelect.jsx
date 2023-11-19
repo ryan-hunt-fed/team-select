@@ -297,7 +297,7 @@ function TypeSelect() {
                             <option value='costar'>Costar</option>
                             <option value='cotton-down'>Cotton Down</option>
                             <option value='cud-chew'>Cud Chew</option>
-                            <option value='curious-medicine'>Curious Medicine</option>
+                            {/* <option value='curious-medicine'>Curious Medicine</option> */}
                             <option value='cursed-body'>Cursed Body</option>
                             <option value='cute-charm'>Cute Charm</option>
                             <option value='damp'>Damp</option>
