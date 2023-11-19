@@ -11,7 +11,7 @@ function Nav() {
                 <div className='nav-links' >
                     <p><a href='#poke-search'>SEARCH</a></p>
                     <p><a href='#poke-types'>TYPES</a></p>
-                    <p><a href='#poke-ability'>ABILLITIES</a></p>
+                    <p><a href='#poke-ability'>ABILITIES</a></p>
                     <p><a href='#poke-team'>RANDOM TEAM</a></p>
                 </div>
 
