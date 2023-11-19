@@ -261,6 +261,13 @@
     background-color: #ee96c2;
 }
 
+.ability-section{
+    background-color: #e4e4dc;
+    padding: 15px;
+    // padding-top: 50px;
+    padding-bottom: 100px;
+}
+
 .ability-container{
     background-color: #D4D9FF;
     display: flex;
@@ -327,5 +334,5 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
