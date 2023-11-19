@@ -260,3 +260,69 @@
 #fairy-button:hover{
     background-color: #ee96c2;
 }
+
+.ability-container{
+    background-color: #D4D9FF;
+    display: flex;
+    margin: 0px 150px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(66, 66, 66);
+    box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.5)  ; 
+    padding: 10px;
+    // width: 1000px;
+    justify-content: center;
+    align-content: center;
+    // gap: 50px;
+    color:#000;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    & form{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    & label{
+        margin: 10px;
+
+    }
+
+    & select{
+        margin: 10px;
+        font: 16px 'VT323', sans-serif;;
+    }
+
+    & button {
+        background-color: #27D0DE;
+        border-radius: 5px;
+        cursor: pointer;
+        // color:white;
+        margin: 10px;
+    }
+
+    & button:hover{
+      background-color: #39e8f8;
+    }
+}
+
+.ability-results{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.ability-header{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}

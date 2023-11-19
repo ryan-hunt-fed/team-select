@@ -25,5 +25,12 @@ export function pokemonTypeApi(data){
     })
 }
 
+export function pokemonAbilityApi(data){
+    return request.get('https://pokeapi.co/api/v2/ability/' + data)
+    .then ( res => {
+        console.log('ability', res.body)
+        return res.body
+    })
+}
 
 
